@@ -1,5 +1,5 @@
 {
-  "homepage": "https://N-NeelPatel.github.io/pages",
+  "homepage": "https://N-NeelPatel.github.io/",
   "name": "3dfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
